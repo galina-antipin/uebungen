@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input id="width" type="number" Breite>
+    <input id="height" type="number" Höhe>
+    <button onclick =calc()></button>
+
+    <script>
+        function calc() {
+            let width = +document.getElementById('width').value;
+            let height = +document.getElementById('height').value;
+            circumference(width, height);
+            diagonal(width, height);
+            area(width, height);
+           width = 0; height = 0;
+        }
+
+        function circumference(a, b) {
+            let circ = 2a + 2b; document.getElementById('circ').innerHTML = Umfang: ${ circ } <br>;
+     }
+
+                function diagonal(a,b){
+                    let diag = Math.sqrt((aa) + (bb));
+                document.getElementById('dia').innerHTML = Diagonale: ${diag}<br>; }
+
+                    function area(a,b){
+                        let area = a * b;
+                    document.getElementById('area').innerHTML = Fläche: ${area}<br>; }
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
