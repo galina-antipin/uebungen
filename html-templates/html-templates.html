@@ -71,7 +71,7 @@
          * Aufgabe 2 
          */
         function addFruit(fruit) {
-            document.getElementById('food').innerHTML += `Frucht hinzugefügt: ${fruit} <br>`;
+            document.getElementById('food').innerHTML += `Frucht hinzugefügt: <b>${fruit} </b>`;
         }
 
         function deleteFruits() {
@@ -146,7 +146,7 @@
     <div><button onclick="addFruit('Apfel')">Apfel</button>
         <button onclick="addFruit('Banane')">Banane</button>
         <button onclick="addFruit('Clementine')">Clementine</button>
-        <button onclick="addFruit('Clementine')">Drachenfrucht</button>
+        <button onclick="addFruit('Drachenfrucht')">Drachenfrucht</button>
     </div>
     <div>
         <button onclick="deleteFruits()">Alles löschen</button>
