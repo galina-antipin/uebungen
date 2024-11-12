@@ -82,13 +82,12 @@
         /**
          * Aufgabe 3 
          */ 
-        name = n;
         function generatedCircle() {
             document.getElementById('generatedHTML').innerHTML = `
             <div class="circle">
               <b>  ${name}   </b> 
             </div> `; 
-            function setName(n) {
+            function setName() {
            
         }
         }
@@ -96,7 +95,13 @@
         /**
          * Aufgabe 4 (Hilfsfunktion um den Namen zu ändern) 
          */
-       
+       function setName(){
+        document.getElementById('generatedHTML').innerHTML = `
+            <div class="circle">
+              <b>  henriette  </b> 
+            </div> `; 
+
+       }
         
 
 
@@ -171,9 +176,8 @@
         den Wert der Variable <code>name</code> zu "Henriette" ändert. Überprüfe, ob sich der Kreis noch verändert.
     </p>
 
-    <button onclick="setName('Franz')">Franz</button>
-    <button onclick="setName('Gundula')">Gundula</button>
-    <button onclick="setName('Henriette')">Henriette</button>
+    <button onclick="setName()">Name</button>
+
 
 
     <p>
